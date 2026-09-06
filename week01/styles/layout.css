@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: serif;
+}
+
+.page-header{
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title{
+  background-color: rgb(5, 42, 72);
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.course-title p{
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.navigation{
+  background-color: rgb(23, 21, 21);
+}
+
+.navigation ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 36px;
+}
+
+.navigation li{
+  list-style: none;
+}
+
+.navigation a{
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: color 0.2s ease;
+}
+
+.navigation a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+ul a:hover{
+  color: rgb(152, 74, 94);
+}
