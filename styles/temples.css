@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    color: #222;
+    background-color: #f5f7f8;
+
+}
+
+main{
+    flex: 1;
+    /* without maximum width the content becomes difficult to read on wide monitors */
+    /* leaves a 1rem margin on both sides of a small screen never allow the content to extend 1100px */
+    width: min(100% - 2rem, 1100px);
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+main h1{
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #16324f;
+}
+.temple-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure{
+    overflow: hidden;
+    border: 1px solid #ccd4da;
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+}
+
+figure img{
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+figcaption{
+    padding: 0.75rem;
+    text-align: center;
+    font-weight: 700;
+}
+header{
+    background-color: #16324f;
+    color: white;
+    padding: 1rem;
+}
+
+.page-title{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#menu-button{
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+nav.show{
+    display: flex;
+}
+
+nav a{
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus-visible{
+    background-color: #e8c547;
+    color: #16324f;
+
+}
+
+footer{
+    padding: 1rem;
+    background-color: #16324f;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A responsive album of temples" />
+    <title>Temple Album</title>
+    <!-- google fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+
+    <!-- links the javascript -->
+    <script src="scripts/temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span class="page-title">Temple Album</span>
+      <button
+        id="menu-button"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav id="main-navigation" aria-label="Main navigation">
+        <a href="temple.html">Home</a>
+        <a href="#old">Old</a>
+        <a href="#new">New</a>
+        <a href="#large">Large</a>
+        <a href="#small">Small</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Temple Album</h1>
+      <div class="temple-grid">
+        <!-- figure to group an image with its captions -->
+        <figure>
+          <img
+            src="images/rio_de_janeiro_brazil_temple.webp"
+            alt="Exterior view of Rio De Janeiro Brazil Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Rio De Janeiro Brazil </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/salt_lake_temple_lds.webp"
+            alt="Exterior view of Salt Lake Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Salt Lake Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/accra_ghana_temple_lds.webp"
+            alt="Exterior view of a Accra Ghana Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/brasilia_brazil_temple_exterior.webp"
+            alt="Exterior view of Brasilia Brazil Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Brasilia Brazil Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/buenos_aires_argentina_temple.webp"
+            alt="Exterior view of Buenos Aires Argentina Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption> Buenos Aires Argentina Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/cedar_city_utah_temple_exterior.webp"
+            alt="Exterior view Cedar City Utah Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Cedar City Utah Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/quito_ecuador_temple.webp"
+            alt="Exterior view of Quito Ecuador Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Quito Ecuador Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/nairobi-kenya-temple-60488-main.jpg"
+            alt="Exterior view of Nairobi Kenya Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Nairobi Kenya Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/red_cliffs_utah_temple_exterior.webp"
+            alt="Exterior view of Red Cliffs Utah Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>Red Cliffs Utah Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/redlands_california_temple.webp"
+            alt="Exterior view of RedLands California Temple"
+            loading="lazy"
+            width="400"
+            height="250"
+          />
+          <figcaption>RedLands California Temple</figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span>
+        Geogrey Muiruri. All rights reserved.
+      </p>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

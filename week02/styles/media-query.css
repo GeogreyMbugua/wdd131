@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    ;
+}
+
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3{
+  font-family: "ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.header-section{
+    padding: 20px 30px;
+   background-color: rgb(91, 141, 192);
+    align-items: center;
+
+}
+
+.header-section h1{
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(103, 153, 203);
+    gap: 1rem;
+    padding: 15px;
+    margin: 10px;
+
+
+}
+
+.card{
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}

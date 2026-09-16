@@ -1,0 +1,6 @@
+	Html Document Object Model
+This is an object model for html document
+The Html is a tree of nodes that represent a HTML Document each part of the document are nodes in the tree, and may be you would be curious to ask why nodes
+
+In the context of the Document Object Model (DOM), a node is simply an individual building block—a JavaScript object—that represents a single piece of your HTML document within a hierarchical tree structure.when the a web browser loads an HTML DOCUMENT,  
+it reads the html code, and transform every single piece of it into an inmemory object each of those objects is a node and together they form the Document Object Model Tree.Document Node is the root point of the entire tree it serves the entry point to access all the other nodes the Element Node represents the HTML tags like <div>, <p>
