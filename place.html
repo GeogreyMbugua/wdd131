@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nairobi,, Kenya- a guide to the city." />
+    <meta name="author" content="Geogrey M. Muiruri" />
+    <link rel="stylesheet" href="styles/place.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Nairobi, Kenya</h1>
+    </header>
+    <main>
+      <section class="hero">
+        <picture>
+          <source media="(min-width:1000px)" srcset="images/large.webp" />
+          <source media="(min-width:600px)" srcset="images/medium.webp" />
+          <img
+            src="images/small.webp"
+            alt="view of Nairobi City"
+            width="640"
+            height="427"
+          />
+        </picture>
+      </section>
+      <section class="data">
+        <h2>Data</h2>
+        <dl>
+          <div>
+            <dt>Area:</dt>
+            <dd>696,272 km²</dd>
+          </div>
+          <div>
+            <dt>Population:</dt>
+            <dd>55,100,586</dd>
+          </div>
+          <div>
+            <dt>Capital:</dt>
+            <dd>Nairobi</dd>
+          </div>
+          <div>
+            <dt>Languages:</dt>
+            <dd>English, Swahili</dd>
+          </div>
+          <div>
+            <dt>Currency:</dt>
+            <dd>Kenyan Shilling</dd>
+          </div>
+          <div>
+            <dt>Time Zone:</dt>
+            <dd>UTC+3</dd>
+          </div>
+          <div>
+            <dt>Calling Code:</dt>
+            <dd>+254</dd>
+          </div>
+          <div>
+            <dt>Internet TLD:</dt>
+            <dd>.ke</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="weather">
+        <h2>
+          Weather<span class="weather-icon" aria-hidden="true">⛅</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#F19E39"
+            class="weather-icon-mobile"
+          >
+            <path
+              d="M224.5-214.5Q210-229 210-250t14.5-35.5Q239-300 260-300t35.5 14.5Q310-271 310-250t-14.5 35.5Q281-200 260-200t-35.5-14.5Zm120 120Q330-109 330-130t14.5-35.5Q359-180 380-180t35.5 14.5Q430-151 430-130t-14.5 35.5Q401-80 380-80t-35.5-14.5Zm120-120Q450-229 450-250t14.5-35.5Q479-300 500-300t35.5 14.5Q550-271 550-250t-14.5 35.5Q521-200 500-200t-35.5-14.5Zm240 0Q690-229 690-250t14.5-35.5Q719-300 740-300t35.5 14.5Q790-271 790-250t-14.5 35.5Q761-200 740-200t-35.5-14.5Zm-120 120Q570-109 570-130t14.5-35.5Q599-180 620-180t35.5 14.5Q670-151 670-130t-14.5 35.5Q641-80 620-80t-35.5-14.5ZM300-360q-91 0-155.5-64.5T80-580q0-83 55-145t136-73q32-57 87.5-89.5T480-920q90 0 156.5 57.5T717-719q69 6 116 57t47 122q0 75-52.5 127.5T700-360H300Zm0-80h400q42 0 71-29t29-71q0-42-29-71t-71-29h-60v-40q0-66-47-113t-113-47q-48 0-87.5 26T333-744l-10 24h-25q-57 2-97.5 42.5T160-580q0 58 41 99t99 41Zm180-100Z"
+            />
+          </svg>
+        </h2>
+        <div class="weather-data">
+          <p><span>Temperature:</span><span id="temp-value">22</span> °C</p>
+          <p><span>Wind speed:</span><span id="wind-value">5</span> km/h</p>
+          <p><span>Wind chill:</span><span id="wind-chill">--</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> Geogrey M. Muiruri. All rights
+        reserved.
+      </p>
+      <p id="lastmodified"></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+:root {
+  --navy: navy;
+  --purple: #702963;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --bg-soft: #eee;
+  --max-width: 760px;
+}
+
+body {
+  font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--navy);
+  text-align: left;
+}
+
+section > :first-child {
+  margin-top: 0;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+main > :first-child {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+main > :last-child {
+  background-color: rgba(0, 0, 255, 0.1);
+  padding: 15px 25px;
+}
+
+main > section:first-of-type {
+  border-top: 2px solid var(--border-color);
+}
+
+main > section:last-of-type {
+  border-bottom: 2px solid var(--border-color);
+}
+
+ul li:nth-child(3n){
+    background-color: var(--bg-soft);
+}
