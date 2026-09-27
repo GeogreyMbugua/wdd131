@@ -140,7 +140,7 @@ function getYear(dedicatedString) {
   figure.innerHTML = `
   <img
    src="${temple.imageUrl}"
-   alt="${temple.templeName} Temple"
+   alt="${temple.templeName}"
    loading="lazy"
    width="400"
    height="250"
