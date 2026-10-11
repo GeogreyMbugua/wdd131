@@ -314,4 +314,19 @@ p strong{
         padding: 24px;
         gap: 0;
     }
+
+    .logo img{
+        height: 58px;
+    }
+
+    .nav-items{
+        gap: 36px;
+    }
+
+      .purpose,
+    .editorial-section {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 64px 0;
+    }
 }
