@@ -297,7 +297,7 @@ p strong{
 /* Footer */
 
 .page-footer{
-    width: 100;
+    width: 100%;
     max-width: var(--page-width);
     margin: 0 auto;
     border-top: 1px solid var(--line-muted);
