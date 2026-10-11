@@ -264,3 +264,45 @@ p strong{
     font-size: var(--fs-body);
     color: var(--text-body);
 }
+/* Wireframe assets and image layouts */
+
+.wireframe-caption{
+    font-size: 0.95rem;
+    color: var(--text-body);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.wireframe-media{
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    border: 1px solid    var(--line-muted);
+    display: block;
+    margin-top: 10px;
+    transition: var(--transition-clean);
+ 
+
+}
+.wireframe-media:hover{
+    border-color: var(--accent-glow);
+}
+
+.scenario-item{
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 2px solid var(--line-muted);
+}
+
+/* Footer */
+
+.page-footer{
+    width: 100;
+    max-width: var(--page-width);
+    margin: 0 auto;
+    border-top: 1px solid var(--line-muted);
+    padding: 40px 24px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-body);
+}
