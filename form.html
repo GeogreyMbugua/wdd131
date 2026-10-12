@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Products review form assignment for WDD 131 Dynamic Web Programming"
+    >
+    <meta name="author" content="Geogrey Muiruri">
+    <title>WDD 131 - Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main class="form-wrapper">
+        <form action="review.html" method="get" aria-label="Product review form">
+            <!-- Products Name selection section -->
+             <fieldset>
+                <legend>Product Information</legend>
+
+                <div class="field">
+                    <label for="product-name">
+                        Product Name <span class="required">*</span>
+                    </label>
+                    <select id="product-name" name="product-name" required>
+                        <option value="" disabled selected>Select a product ...</option>
+                        <!-- populate dynamically using javascript -->
+                    </select>
+                </div>
+             </fieldset>
+
+            <!-- Overall Rating section -->
+            
+             <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+
+                <div class="field">
+
+                    <div class="rating" aria-label="Overall rating">
+                        <input type="radio" id="star5" name="overall-rating" value="5" required>
+                        <label for="star5">&#9733;</label>
+
+                        <input type="radio" id="star4" name="overall-rating" value="4">
+                        <label for="star4">&#9733;</label>
+
+                        <input type="radio" id="star3" name="overall-rating" value="3">
+                        <label for="star3">&#9733;</label>
+
+                        <input type="radio" id="star2" name="overall-rating" value="2">
+                        <label for="star2">&#9733;</label>
+
+                        <input type="radio" id="star1" name="overall-rating" value="1">
+                        <label for="star1">&#9733;</label>
+                    </div>
+                </div>
+             </fieldset>
+
+             <!-- Date of Installation -->
+             <fieldset>
+                <legend>Date of Installation <span class="required">*</span></legend>
+                <div class="field">
+                    <label for="installation-date">Date of Installation <span class="required">*</span></label>
+                    <input type="date" id="installation-date" name="installation-date" required>
+                </div>
+             </fieldset>
+
+             <!-- useful Features -->
+             <fieldset>
+                <legend>Which features did you find useful? <span class="optional">(Check all that apply)</span></legend>
+                <div class="check-box-group">
+                   <label for="feature-durability">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability">
+                        Durability
+                    </label>
+                   <label for="feature-ease-of-use">
+                        <input type="checkbox" id="feature-ease-of-use" name="features" value="ease-of-use">
+                        Ease of Use
+                    </label>
+                   <label for="feature-performance">
+                        <input type="checkbox" id="feature-performance" name="features" value="performance">
+                        Performance
+                    </label>
+                   <label for="feature-design">
+                        <input type="checkbox" id="feature-design" name="features" value="design">
+                        Design
+                    </label>
+                </div>
+             </fieldset>
+
+             <!-- Written Review optional -->
+             <fieldset>
+                <legend>Written Review <span class="optional">(Optional)</span></legend>
+                <div class="field">
+                    <label for="review">Your Review:</label>
+                    <textarea
+                     id="review"
+                     name="review"
+                     rows="5"
+                     cols="50"
+                     placeholder="Tell us about you experience... (Optional)"
+                     ></textarea>
+                </div>
+             </fieldset>
+
+             <!-- Your Name optional -->
+             <fieldset>
+                <legend>Your Name <span class="optional">(Optional)</span></legend>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+             </fieldset>
+
+             <!-- Post Review -->
+           <div class="submit-row">
+            <input type="submit" value="Submit Review">
+
+           </div>
+
+        </form>
+    </main>
+
+    <!-- footer -->
+<footer class="page-footer">
+      <p>&copy;<span id="currentyear"></span>
+        Geogrey M. Muiruri. All rights reserved.
+        Nairobi Kenya.
+      </p>
+
+      <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>
