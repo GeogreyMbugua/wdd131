@@ -41,17 +41,17 @@ img{
     display: block;
 }
 
-.page-header{
-    background-color: var(--panel);
+header{
+    background-color: #150123;
     padding: 1rem;
     box-shadow: 0 2px 4px var(--shadow);
 }
 
-.page-header h1{
+header h1{
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
-    color: var(--primary);
+    color: #fff;
 }
 
 .form-wrapper,
@@ -240,8 +240,32 @@ input[type="submit"]:focus-visible{
 }
 
 .page-footer{
-    background-color: var(--panel);
+    background-color: #150123;
     padding: 1rem;
+    color: #fff;
     box-shadow: 0 -2px 4px var(--shadow);
     text-align: center;
+}
+
+@media (max-width: 600px){
+    .form-wrapper,
+    .review-card{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    .rating{
+        gap: 0.25rem;
+
+    }
+
+    submit-row{
+        justify-content: stretch;
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        min-width: 0;
+    }
 }
