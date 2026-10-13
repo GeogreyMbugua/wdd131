@@ -1,41 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Geogrey Muiruri">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Geogrey Muiruri" />
     <title>Parrot Media Hub | Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
     <script src="scripts/main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="page-header">
-        <div class="header-container">
-            <a class="logo" href="index.html">
-                <img src="images/logo/pa-logo.png" alt="Parrot Media Logo">
-            </a>
+      <div class="header-container">
+        <a class="logo" href="index.html">
+          <img src="images/logo/pa-logo.png" alt="Parrot Media Logo" />
+        </a>
 
-            <nav class="navigation" aria-label="Main Navigation">
-                <ul class="nav-items">
-                    <li class="nav-item">
-                        <a href="index.html" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="media.html">Media</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="booking.html">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="booking.html#booking-form">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="actions">
-                <a href="#booking-form" class="cta-btn">Book Talent</a>
-            </div>
+        <nav class="navigation" aria-label="Main Navigation">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a href="booking.html">Booking</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="booking.html#booking-form" class="cta-btn">Book Talent</a>
         </div>
+      </div>
     </header>
-    
-</body>
+    <main id="main-content" class="home-main">
+      <section class="hero" aria-labelledby="home-title">
+        <div class="hero-content">
+          <h1 id="home-title">Parrot Media Hub</h1>
+
+          <p>
+            Broadcasting, podcasting, and live experiences — Parrot brings
+            stories to life, sparks conversations, and connects audiences
+            through the power of entertainment.
+          </p>
+
+          <a href="media.html">Explore the media</a>
+          <a href="booking.html#booking-form">Bookings inquiries</a>
+          <!-- add an approved asset -->
+        </div>
+        <img
+          class="hero-image"
+          src="images/hero/parrot-hero.webp"
+          alt="Camera operator working with a professional video camera"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </section>
+
+      <section class="media-highlights" aria-labelledby="highlights-title">
+        <h2 id="highlights-title">Media highlights</h2>
+        <p class="section-subtitle">
+          A selection of Parrot's work across broadcasting, podcasting,
+          interviews, and live event hosting. Explore the appearances and
+          experiences that showcase his work in media and entertainment.
+        </p>
+        <ul class="highlight-grid">
+          <li>
+            <article class="highlight-card">
+              <header class="highlight-card-header">
+                <p class="highlight-type">Broadcasting and studio work</p>
+                <h3>Inside the Studio</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-abdellahbnz-33923596.webp"
+                  alt="Microphone in front of a seated person in a recording studio."
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  A podcast microphone and recording setup in a studio
+                  environment.
+                </figcaption>
+              </figure>
+              <p class="highlight-description">
+                Podcast recording and live broadcasting in a professional studio
+                environment, showcasing Parrot's expertise in media production
+                and presentation.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="highlight-card">
+              <header class="highlight-card-header">
+                <p class="highlight-type">Live Event Hosting</p>
+                <h3>On Stage</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-maorattias-5152571.webp"
+                  alt="replace with an accurate description of the image"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  Describe the actual event, host, and setting shown in the
+                  photograph.
+                </figcaption>
+              </figure>
+              <p class="highlight-description">
+                Discover the energy of live events and the role of engaging
+                presentation in creating memorable audience experiences
+              </p>
+            </article>
+          </li>
+          <li>
+            <article class="highlight-card">
+              <header class="highlight-card-header">
+                <p class="highlight-type">Interviews and Media Appearances</p>
+                <h3>In Conversation</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-cottonbro-6883809.webp"
+                  alt="replace with an accurate description of the image"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  Identify the people and context shown, where verified
+                </figcaption>
+              </figure>
+              <p class="highlight-description">
+                A look at interviews and media conversations that bring people,
+                perspectives, and stories together.
+              </p>
+            </article>
+          </li>
+        </ul>
+
+        <a href="media.html" class="section-link">Explore all Media</a>
+      </section>
+      <section class="profile" aria-labelledby="profile-title">
+        <div class="profile-content">
+          <h2 id="profile-title">Meet Parrot</h2>
+          <p class="profile-intro">Introduce Parrot using verified details</p>
+          <p class="profile-intro">
+            Add a brief fact checked overview of parrots work
+          </p>
+        </div>
+        <section class="career-timeline" aria-labelledby="timeline-title">
+          <h3 id="timeline-title">Career highlights</h3>
+          <ol class="career-timeline-list">
+            <li>
+              <article class="career-milestone">
+                <h4>Verified role, achievement or career milestone</h4>
+                <p>Brief factual explanation of this milestone</p>
+              </article>
+            </li>
+            <li>
+              <article class="career-milestone">
+                <h4>Verified role, achievement or career milestone</h4>
+                <p>Brief factual explanation of this milestone</p>
+              </article>
+            </li>
+            <li>
+              <article class="career-milestone">
+                <h4>Verified role, achievement or career milestone</h4>
+                <p>Brief factual explanation of this milestone</p>
+              </article>
+            </li>
+            <li>
+              <article class="career-milestone">
+                <h4>Verified role, achievement or career milestone</h4>
+                <p>Brief factual explanation of this milestone</p>
+              </article>
+            </li>
+            <li>
+              <article class="career-milestone">
+                <h4>Verified role, achievement or career milestone</h4>
+                <p>Brief factual explanation of this milestone</p>
+              </article>
+            </li>
+          </ol>
+        </section>
+        <a href="media.html" class="section-link"
+          >Explore Parrot's media work</a
+        >
+      </section>
+
+      <section class="booking-call" aria-labelledby="booking-title">
+        <h2 id="booking-title">Bookings and partnerships</h2>
+
+        <p>
+          <!-- Add a concise invitation based on the booking service offered by Parrot Media -->
+        </p>
+
+        <a href="booking.html#booking-form" class="section-link">
+          Make a Booking Inquiry
+        </a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>
+        &copy;<span id="currentyear"></span>
+        Geogrey Muiruri. All rights reserved.
+      </p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
