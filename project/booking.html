@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta
+      name="description"
+      content="Send Parrot Media an inquiry about event hosting, media appearances, podcast collaborations, or brand partnerships."
+    >
+     <meta name="author" content="Geogrey Muiruri">
+    <title>Parrot Media Hub | Booking</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+   <link rel="stylesheet" href="styles/booking.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/booking.js" defer></script>
+   
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-container">
+        <a class="logo" href="index.html">
+          <img src="images/logo/pa-logo.png" alt="Parrot Media Logo" />
+        </a>
+
+        <nav class="navigation" aria-label="Main Navigation">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="media.html">Media</a>
+            </li>
+            <li class="nav-item">
+              <a href="booking.html" aria-current="page">Booking</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="booking.html#booking-form" class="cta-btn">Book Talent</a>
+        </div>
+      </div>
+    </header>
+    <main id="main-content" class="booking-main">
+      <section class="booking-intro" aria-labelledby="booking-title">
+        <p class="section-eyebrow">LET’S WORK TOGETHER</p>
+        <h1 id="booking-title">Bookings and partnerships<span>.</span></h1>
+        <p class="booking-intro-description">
+          Share a few details about your event, appearance, or partnership idea.
+          Parrot Media will use your information to understand your request.
+        </p>
+      </section>
+
+      <section class="booking-form-section" aria-labelledby="form-title">
+        <div class="booking-form-intro">
+          <p class="section-eyebrow">START A CONVERSATION</p>
+          <h2 id="form-title">Tell us about your idea</h2>
+          <p>Fields marked “required” must be completed.</p>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <fieldset>
+            <legend>Your contact details</legend>
+
+            <div class="form-field">
+              <label for="name">Name <span>(required)</span></label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address <span>(required)</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="organization"
+                >Organization <span>(optional)</span></label
+              >
+              <input
+                id="organization"
+                name="organization"
+                type="text"
+                autocomplete="organization"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your inquiry</legend>
+
+            <div class="form-field">
+              <label for="booking-type"
+                >Type of inquiry <span>(required)</span></label
+              >
+              <select id="booking-type" name="bookingType" required>
+                <option value="">Choose an inquiry type</option>
+                <option value="event-hosting">Live event hosting</option>
+                <option value="broadcasting">
+                  Broadcasting or media appearance
+                </option>
+                <option value="podcast">
+                  Podcast appearance or collaboration
+                </option>
+                <option value="partnership">Brand partnership</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="event-date">Event date <span>(optional)</span></label>
+              <input id="event-date" name="eventDate" type="date" />
+            </div>
+
+            <div class="form-field">
+              <label for="location"
+                >Location or event format <span>(optional)</span></label
+              >
+              <input
+                id="location"
+                name="location"
+                type="text"
+                placeholder="City, venue, or online"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Tell us more <span>(required)</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <p class="form-demo-notice">
+            This is a course-project demonstration form. It does not send or
+            store your information.
+          </p>
+
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+
+          <button class="cta-btn" type="submit">Submit inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        &copy;<span id="currentyear"></span>
+        Geogrey Muiruri. All rights reserved.
+      </p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

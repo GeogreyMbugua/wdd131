@@ -130,32 +130,35 @@ if (
 
     return normalizeText(`${title} ${category} ${description} ${caption}`);
   }
+
+    const mediaItems = Array.from(mediaCards, (card) => ({
+    id: card.dataset.mediaId,
+    title: card.dataset.title,
+    category: card.dataset.category,
+    searchableText: getSearchableText(card),
+    cardElement: card,
+    listItem: card.closest("li"),
+  }));
+
+
   function updateMediaCards() {
     const searchTerm = normalizeText(searchInput.value)
     const selectedCategory = categorySelect.value;
     let visibleCount = 0;
 
-  mediaCards.forEach((card)=>{
-    // match and display based on the searchTerm and the category
-
-    const cardText = getSearchableText(card);
-    const cardCategory = card.dataset.category
-
-    const matchesSearch = cardText.includes(searchTerm)
-    const matchesCategory = selectedCategory === "all" || cardCategory === selectedCategory;
-    const shouldShow = matchesSearch && matchesCategory
-
-    const listItem = card.closest("li");
-
-
-    if (listItem) {
-      listItem.hidden = !shouldShow;
+    mediaItems.forEach((item) => {
+    const matchesSearch = item.searchableText.includes(searchTerm);
+    const matchesCategory =
+      selectedCategory === "all" || item.category === selectedCategory;
+    const shouldShow = matchesSearch && matchesCategory;
+  
+    if (item.listItem) {
+      item.listItem.hidden = !shouldShow;
     }
-
+  
     if (shouldShow) {
       visibleCount += 1;
     }
-
   });
   const itemLabel = visibleCount === 1 ? "media item" : "media items";
   resultsMessage.textContent = `${visibleCount} ${itemLabel} found.`;
