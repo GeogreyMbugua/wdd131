@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Geogrey Muiruri" />
+    <title>Parrot Media Hub | Media</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+   <link rel="stylesheet" href="styles/media.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/media.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-container">
+        <a class="logo" href="index.html">
+          <img src="images/logo/pa-logo.png" alt="Parrot Media Logo" />
+        </a>
+
+        <nav class="navigation" aria-label="Main Navigation">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="media.html"  aria-current="page">Media</a>
+            </li>
+            <li class="nav-item">
+              <a href="booking.html">Booking</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <a href="booking.html#booking-form" class="cta-btn">Book Talent</a>
+        </div>
+      </div>
+    </header>
+    <main id="main-content" class="media-main">
+      <section class="media-intro" aria-labelledby="media-title">
+        <p class="section-eyebrow">PARROT MEDIA HUB</p>
+        <h1 id="media-title">Explore the media</h1>
+        <p class="media-intro-description">
+          Explore conversations, broadcasts, interviews, and live experiences
+          from the world of Parrot Media.
+        </p>
+      </section>
+
+      <section class="media-library" aria-labelledby="library-title">
+        <div class="media-library-title">
+          <p class="section-eyebrow">THE COLLECTION</p>
+          <h2 id="library-title">Media Library</h2>
+        </div>
+        <form
+          role="search"
+          aria-label="Search the media library"
+          method="get"
+          action="media.html"
+          class="media-controls"
+        >
+          <div class="media-search-field">
+            <label for="media-search">Search Media</label>
+            <input
+              id="media-search"
+              name="search"
+              type="search"
+              placeholder="Search titles and topics"
+            />
+          </div>
+          <div class="media-category-field">
+            <label for="media-category">Filter by category</label>
+            <select id="media-category" name="category">
+              <option value="all">All categories</option>
+              <option value="podcast">Podcast</option>
+              <option value="broadcasting">Broadcasting</option>
+              <option value="interviews">Interviews</option>
+              <option value="live-events">Live events</option>
+            </select>
+          </div>
+          <button class="media-reset" type="reset">Clear filters</button>
+        </form>
+        <p class="media-results" aria-live="polite" aria-atomic="true">
+          Showing all four features.
+        </p>
+        <p class="favorites-status" role="status" aria-atomic="true"></p>
+        <ul class="highlight-grid">
+          <li>
+            <article
+              class="highlight-card"
+              data-category="podcast"
+              data-media-id="inside-studio"
+              data-title="Inside the Studio"
+            >
+              <header class="highlight-card-header">
+                <p class="highlight-type">Podcast</p>
+                <h3>Inside the Studio</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-abdellahbnz-33923596.webp"
+                  alt="A studio microphone positioned for a podcast recording"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>Conversations begin in the studio.</figcaption>
+              </figure>
+
+              <p class="highlight-description">
+                Explore the conversations and creative process behind audio
+                storytelling.
+              </p>
+
+              <button
+                class="favorite-button"
+                type="button"
+                data-favorite-button
+                aria-pressed="false"
+              >
+                Save to favorites
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article
+              class="highlight-card"
+              data-category="broadcasting"
+              data-media-id="behind-broadcast"
+              data-title="Behind the Broadcast"
+            >
+              <header class="highlight-card-header">
+                <p class="highlight-type">Broadcasting</p>
+                <h3>Behind the Broadcast</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/hero/parrot-hero.webp"
+                  alt="Camera operator working with a professional video camera"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>Production from behind the camera.</figcaption>
+              </figure>
+
+              <p class="highlight-description">
+                Discover the preparation and production that bring broadcast
+                stories to audiences.
+              </p>
+
+              <button
+                class="favorite-button"
+                type="button"
+                data-favorite-button
+                aria-pressed="false"
+              >
+                Save to favorites
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article
+              class="highlight-card"
+              data-category="interviews"
+              data-media-id="in-conversation"
+              data-title="In Conversation"
+            >
+              <header class="highlight-card-header">
+                <p class="highlight-type">Interviews</p>
+                <h3>In Conversation</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-viethangpham-33071233.webp"
+                  alt="Two speakers seated across from each other on an interview set"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>Every conversation has a story to tell.</figcaption>
+              </figure>
+
+              <p class="highlight-description">
+                Thoughtful questions and fresh perspectives bring people and
+                ideas together.
+              </p>
+
+              <button
+                class="favorite-button"
+                type="button"
+                data-favorite-button
+                aria-pressed="false"
+              >
+                Save to favorites
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article
+              class="highlight-card"
+              data-category="live-events"
+              data-media-id="beyond-studio"
+              data-title="Beyond the Studio"
+            >
+              <header class="highlight-card-header">
+                <p class="highlight-type">Live events</p>
+                <h3>Beyond the Studio</h3>
+              </header>
+
+              <figure class="highlight-image">
+                <img
+                  src="images/media-highlights/pexels-maorattias-5152571.webp"
+                  alt="A live event audience facing a brightly lit stage"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  The atmosphere, the audience, the moment.
+                </figcaption>
+              </figure>
+
+              <p class="highlight-description">
+                Explore the presentation and energy that make live events
+                engaging.
+              </p>
+
+              <button
+                class="favorite-button"
+                type="button"
+                data-favorite-button
+                aria-pressed="false"
+              >
+                Save to favorites
+              </button>
+            </article>
+          </li>
+        </ul>
+        <p class="media-empty-message" hidden>
+          No media matches those filters. Try another search or category.
+        </p>
+
+        <noscript>
+          <p>
+            Search, filtering, and favorites require JavaScript. All media
+            features are listed above.
+          </p>
+        </noscript>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>
+        &copy;<span id="currentyear"></span>
+        Geogrey Muiruri. All rights reserved.
+      </p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

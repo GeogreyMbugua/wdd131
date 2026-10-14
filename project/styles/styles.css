@@ -157,7 +157,7 @@ textarea {
 }
 
 .hero p,
-.sectrion-intro,
+.section-subtitle,
 .profile p,
 .booking-call p {
   max-width: 65ch;
@@ -165,6 +165,129 @@ textarea {
   line-height: 1.7;
 }
 
+.profile-content{
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.profile-eyebrow{
+    margin: 0 0 1.25rem;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.profile-content h2{
+    margin: 0;
+    font-size: clamp(2.75rem, 7vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -0.065em;
+    line-height: 0.98;
+}
+.profile-content h2 span,
+.timeline-heading h3 span {
+    color: var(--color-accent, #10b981);
+}
+
+.profile-tagline{
+    max-width: 58ch;
+    margin: 1.25rem 0 2rem;
+    color: var(--color-text);
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.015em;
+}
+.profile-bio{
+    max-width: 68ch;
+}
+.profile-bio p{
+    margin: 0 0 1.1rem;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.8;
+
+}
+
+.profile-bio p:last-child{
+    margin-bottom: 0;
+}
+
+/* caree timeline */
+.career-timeline{
+    max-width: 58rem;
+    margin: clamp(3rem, 7vw, 5rem) auto 0;
+}
+.timeline-heading{
+    margin-bottom: 1.75rem;
+}
+
+.timeline-heading h3{
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    line-height: 1.2;
+}
+
+.career-timeline-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.career-timeline-list > li + li {
+    border-top: 1px solid var(--color-border)
+}
+.career-milestone{
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+}
+
+.milestone-year{
+    align-self: start;
+    margin: 0.15rem 0 0;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+.milestone-content h4{
+    margin: 0 0 0.5rem;
+    color: var(--color-text);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.7
+}
+
+.milestone-content p {
+  max-width: 60ch;
+  margin: 0;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.profile > .section-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-accent);
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.profile > .section-link:hover {
+  color: var(--color-accent);
+}
+
+.profile > .section-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
 .hero {
   display: grid;
   gap: 2rem;
@@ -271,7 +394,46 @@ textarea {
   color: var(--color-text);
 }
 .booking-call {
-  border-top: 1px solid var(--color-border);
+  display: grid;
+  gap: 2rem;
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid var(--color-border);
+  background:#11151c;
+}
+
+.booking-call h2{
+    max-width: 15ch;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.booking-call h2 span{
+    color: var(--color-accent);
+}
+
+.booking-description{
+      max-width: 58ch;
+  margin: 1.25rem 0 0;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.booking-call-action .section-link{
+    display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
 }
 
 .page-footer {
@@ -299,6 +461,83 @@ textarea {
 .footer-nav a:hover {
   color: var(--color-text);
 }
+
+.profile-overview{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.profile-visual{
+    margin: 0;
+}
+
+.profile-visual img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.profile-visual figcaption{
+    margin-top: 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
+
+.booking-eyebrow{
+    margin: 0 0 1rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+
+}
+
+.booking-call h2{
+    max-width: 15ch;
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.booking-call h2 span{
+    color: var(--color-accent);
+}
+
+.booking-description{
+    max-width: 58ch;
+    margin: 1.25rem 0 0;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.booking-call-action .section-link{
+     display: inline-flex;
+     align-items: center;
+    gap: 0.75rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-accent);
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+
+.booking-call-action .section-link:hover{
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+.booking-call-action .section-link:focus-visible{
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
 @media (min-width: 768px) {
   .header-container {
     grid-template-columns: auto 1fr auto;
@@ -322,6 +561,11 @@ textarea {
   .profile,
   .booking-call {
     padding: 5rem;
+  }
+
+  .profile-overview{
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.8fr);
+    gap: 3rem;
   }
   .hero {
     grid-template-columns: 1.1fr 0.99fr;
@@ -361,4 +605,15 @@ textarea {
   .page-footer > :last-child {
     justify-self: end;
   }
+  .booking-call{
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 3rem;
+
+  }
+}
+@media (prefers-reduced-motion: reduce){
+    .booking-call-action .section-link{
+        transition: none;
+    }
 }
