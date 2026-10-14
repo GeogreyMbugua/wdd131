@@ -15,9 +15,7 @@
   line-height: 1.05;
 }
 
-.media-intro h1 span {
-  color: var(--color-accent);
-}
+
 
 .media-intro-description {
   max-width: 62ch;
@@ -67,23 +65,17 @@
   font-size: 0.9rem;
 }
 
-/* Use a flexible card layout for the larger Media collection. */
-.media-main .highlight-grid {
-  grid-template-columns: 1fr;
-}
 
 .media-main .highlight-card {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
-
 .media-main .highlight-image img {
-  width: 100%;
+  height: auto;
+  min-height: 0;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
 }
-
 .media-main .favorite-button {
   align-self: flex-start;
   margin: auto 1rem 1rem;

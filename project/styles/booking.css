@@ -7,14 +7,7 @@
   padding-block: clamp(3rem, 8vw, 6rem) 2.5rem;
 }
 
-.booking-intro .section-eyebrow,
-.booking-form-intro .section-eyebrow {
-  margin-bottom: 0.75rem;
-  color: var(--color-accent);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
+
 
 .booking-intro h1 {
   max-width: 18ch;
@@ -132,15 +125,11 @@
   padding: 0.7rem 1.2rem;
   border: 1px solid var(--color-accent);
   border-radius: 0.2rem;
-  background-color: var(--color-accent);
-  color: var(--color-background);
   cursor: pointer;
 }
 
 .booking-form .cta-btn:hover {
   border-color: var(--color-text);
-  background-color: var(--color-text);
-  color: var(--color-background);
 }
 
 @media (min-width: 48rem) {
