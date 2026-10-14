@@ -446,6 +446,43 @@ textarea {
   color: var(--color-background);
 }
 
+.references-main {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+    padding-block: clamp(3rem, 8vw, 6rem) 5rem;
+  }
+  .references-main h1 {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+  .references-intro {
+    max-width: 62ch;
+    line-height: 1.7;
+  }
+  .references-list {
+    display: grid;
+    gap: 1rem;
+    max-width: 50rem;
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+  }
+  .references-list li {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    background-color: #11151c;
+  }
+  .references-list a {
+    color: var(--color-accent);
+    text-underline-offset: 0.2em;
+  }
+  .references-list a:hover {
+    color: var(--color-text);
+  }
+
+
 @media (min-width: 768px) {
   .header-container {
     grid-template-columns: auto 1fr auto;
